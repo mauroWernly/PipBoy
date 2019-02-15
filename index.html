@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PipBoy | Mauro Wernly's demo</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/pipboy.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light nav-pipboy-top">
+                    <div class="collapse navbar-collapse main-navigation show" id="navbarNav">
+                        <ul class="navbar-nav nav-justified w-100">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">
+                                    <span class="nav-link-inner">STAT</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="inv.html">
+                                    <span class="nav-link-inner">INV</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="data.html">
+                                    <span class="nav-link-inner">DATA</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="map.html">
+                                    <span class="nav-link-inner">MAP</span> 
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="status-tab" data-toggle="tab" href="#status" role="tab" aria-controls="status" aria-selected="true">STATUS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="special-tab" data-toggle="tab" href="#special" role="tab" aria-controls="special" aria-selected="false">SPECIAL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="perks-tab" data-toggle="tab" href="#perks" role="tab" aria-controls="perks" aria-selected="false">PERKS</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active size-pipboy" id="status" role="tabpanel" aria-labelledby="status-tab">
+                        <div class="position-image">
+                            <img class="center-image"src="images/pipboy.png" alt="">
+                        </div>
+                        <div class="stats-bars">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="stat-bar">
+                                        <div class="level-progress">
+                                            <div class="level-progress-indicator w-90"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="stat-bar">
+                                        <div class="level-progress">
+                                            <div class="level-progress-indicator w-50"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6"></div>
+                                <div class="col-3">
+                                    <div class="stat-bar">
+                                        <div class="level-progress">
+                                            <div class="level-progress-indicator w-20"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="stat-bar">
+                                        <div class="level-progress">
+                                            <div class="level-progress-indicator w-80"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6"></div>
+                                <div class="col-3">
+                                    <div class="stat-bar">
+                                        <div class="level-progress">
+                                            <div class="level-progress-indicator w-60"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="stat-bar">
+                                        <div class="level-progress">
+                                            <div class="level-progress-indicator w-70"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row stat-numbers">
+                            <div class="col-2 transparent"></div>
+                            <div class="col-2"> <img src="images/gun-icon.png" class="image-responsive gun-icon"></div>
+                            <div class="col-2 text-center sm-indicator">
+                                <div class="icon"><img src="images/crosshair-icon.png " class="image-responsive ch-icon"></div>
+                                <div class="points">18</div>
+                            </div>
+                            <div class="col-1 transparent"></div>
+                            <div class="col-2"><img src="images/helmet-icon.png" class="image-responsive helmet-icon"></div>
+                            <div class="col-2 text-center sm-indicator">
+                                <div class="icon"><img src="images/energy-icon.png" class="image-responsive energy-icon"></div>
+                                <div class="points">18</div>
+                            </div>
+                            <div class="col-2 text-center sm-indicator">
+                                <div class="icon"><img src="images/radiation-icon.png" class="image-responsive rdt-icon"></div>
+                                <div class="points">18</div>
+                            </div>
+                            <div class="col-2 transparent"></div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="special" role="tabpanel" aria-labelledby="special-tab">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 col-md-4">
+                                            <ul class=" mt-3 characteristics">
+                                                <li class="strength">
+                                                    Strength<span class="float-right">8</span>
+                                                </li>
+                                                <li class="perception">
+                                                    Perception<span class="float-right">6</span>
+                                                </li>
+                                                <li class="endurance">
+                                                    Endurance<span class="float-right">5</span>
+                                                </li>
+                                                <li class="charisma">
+                                                    Charisma<span class="float-right">9</span>
+                                                </li>
+                                                <li class="intelligence">
+                                                    Intelligence<span class="float-right">7</span>
+                                                </li>
+                                                <li class="agility">
+                                                    Agility<span class="float-right">8</span>
+                                                </li>
+                                                <li class="luck">
+                                                    Luck<span class="float-right">6</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 col-md-8">
+                                            <div class="row-highlight character-info">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                            <img src="images/strength.png" class="special-img-position">
+                                                    </div>
+                                                </div>
+        
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span class="special-description">Strength is a measure of of your raw physical power. It affects how much you carry, and the damage of all melee attacks.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="perks" role="tabpanel" aria-labelledby="perks-tab">
+                        <div class="containter-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="mt-3 disclaimer">
+                                        This is just a demo. This page was intentended to test my skills as a front-end developer. Feel free to check out my work on Dribbble, Behance, or other social media profiles.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>            
+    </div>
+    <div class="container-fluid position-fixed fixed-bottom pb-2">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar  navbar-expand-lg navbar-light pip-footer pl-0 pr-0">
+                    <div class="row w-100 text-monospace ml-0 mr-0">
+                        <div class="col-3">
+                            <div class="hp-hp-lvl-margin text-left">HP 86/90</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="hp-hp-lvl-margin text-center">
+                                LEVEL 1
+                                <div class="level-progress">
+                                    <div class="level-progress-indicator"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="hp-hp-lvl-margin text-right">AP 48/50</div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/pipboy.js"></script>
+</body>
+</html>
