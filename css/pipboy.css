@@ -181,7 +181,9 @@ span.nav-link-inner{
 .navbar.pip-footer .ap-lvl-margin-patch {
     margin-right: -15px;
 }
-
+.row.stat-numbers{
+    margin-top: 25px;
+}
 .pip-footer::before, 
 .pip-footer::after{
     display: none;
